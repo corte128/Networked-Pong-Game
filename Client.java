@@ -34,7 +34,8 @@ public class Client
 			
 			clientInput.readLine();
 			
-			ServerReciever sceneUpdater = new ServerReciever(game, connectionSock);
+			//creates a thread to scan for updates from the server
+			ServerReciever sceneUpdater = new ServerReciever(game, connectionSock); 
 			Thread recieving = new Thread(sceneUpdater);
 			recieving.start();
 			
