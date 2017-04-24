@@ -8,7 +8,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-public class ServerReciever implements Runnable //recieves the current positions of all components and updates them on the JPanel
+//recieves the current positions of all components from the server and updates them on the client JPanel
+public class ServerReciever implements Runnable 
 {
 	Socket connectionSock = null;
 	scene game = null;
